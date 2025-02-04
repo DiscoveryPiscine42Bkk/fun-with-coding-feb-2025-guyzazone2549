@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
+    <link rel="stylesheet" href="balloon.css">
+</head>
+
+<body>
+    <div class="balloon" id="balloon"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<script>
+    let colornum = 0;
+    const colors = ["red", "green", "blue"];
+    document.getElementById("balloon").addEventListener("click", () => {
+        let sizepx = parseInt(document.getElementById("balloon").style.width);
+        if (sizepx < 420) {
+            document.getElementById("balloon").style.width = (sizepx + 10) + "px";
+            document.getElementById("balloon").style.height = (sizepx + 10) + "px";
+        } else {
+            document.getElementById("balloon").style.width = "200px";
+            document.getElementById("balloon").style.height = "200px";
+        }
+        document.getElementById("balloon").style.backgroundColor = colors[colornum];
+        colornum = (colornum + 1) % colors.length;
+    });
+
+    document.getElementById("balloon").addEventListener("mouseleave", () => {
+        let sizepx = parseInt(document.getElementById("balloon").style.width);
+        if (sizepx > 200) {
+            document.getElementById("balloon").style.width = (sizepx - 5) + "px";
+            document.getElementById("balloon").style.height = (sizepx - 5) + "px";
+        }
+        colornum = (colornum - 1 + colors.length) % colors.length;
+        document.getElementById("balloon").style.backgroundColor = colors[colornum];
+    });
+
+</script>
