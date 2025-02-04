@@ -1,0 +1,10 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table td {
+    padding: 20px;
+    font-size: 18px; 
+}
