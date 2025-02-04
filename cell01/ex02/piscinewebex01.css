@@ -1,17 +1,17 @@
 h1 {
     text-align: center;
 }
-/* จัดตำแหน่งรูปภาพให้อยู่ในแถวเดียวกัน */
+
 .img {
-    display: flex;  /* ใช้ Flexbox */
-    justify-content: center; /* จัดรูปให้อยู่ตรงกลาง */
-    gap: 10px; /* กำหนดระยะห่างระหว่างรูป */
+    display: flex;  
+    justify-content: center;
+    gap: 10px; 
 }
 
-/* กำหนดขนาดรูปภาพให้เท่ากัน */
+
 .img img {
-    width: 300px;  /* กำหนดความกว้าง */
-    height: 200px; /* กำหนดความสูง */
-    object-fit: cover; /* ทำให้รูปไม่ผิดสัดส่วน โดยตัดส่วนเกินออก */
-    border-radius: 10px; /* ทำให้ขอบมน (สามารถเอาออกได้) */
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 10px;
 }
