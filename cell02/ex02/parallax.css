@@ -1,0 +1,31 @@
+.parallax {
+    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+#parallax1 {
+    background-image: url('ds.jpg');
+}
+
+#parallax2 {
+    background-image: url('ds1.jpg');
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 10px;
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
+
