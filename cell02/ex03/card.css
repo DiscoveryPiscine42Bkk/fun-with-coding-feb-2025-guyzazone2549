@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    border: none;
+}
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Myname {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.desc {
+    font-size: 16px;
+    color: #777;
+    margin-top: 1px;
+}
+.social-icons img {
+    width: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
