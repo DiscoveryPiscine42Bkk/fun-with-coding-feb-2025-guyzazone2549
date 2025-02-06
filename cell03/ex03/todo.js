@@ -31,7 +31,7 @@ function updateTasksCookie() {
     for (let i = 0; i < taskElements.length; i++) {
         taskArray.push(taskElements[i].textContent);
     }
-    document.cookie = "tasks=" + encodeURIComponent(JSON.stringify(taskArray)) + "; path=/";
+    document.cookie = "tasks=" + encodeURIComponent(JSON.stringify(taskArray)) + ";";
 }
 
 function getCookie(name) {
