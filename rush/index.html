@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            font-family:verdana;
+        }
+
+        .navbar {
+            background: linear-gradient(45deg, hsl(0, 0%, 35%), #dbdbdb)
+        }
+
+        .nav-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .nav-icon:hover {
+            transform: scale(1.01);
+        }
+
+        .resume {
+            height: 100vh;
+            background: linear-gradient(45deg, #ff7f50, #f5e5af);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .profile-card {
+            background: rgb(192, 192, 192);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            padding: 5rem 0;
+            background: linear-gradient(45deg, #ff7f50, #f5e5af)
+        }
+
+        .section-about {
+            padding: 5rem 0;
+            background: linear-gradient(45deg, hsl(0, 0%, 35%), #dbdbdb)
+        }
+
+        .section-skill {
+            padding: 5rem 0;
+            background: linear-gradient(45deg, #ff7f50, #f5e5af)
+        }
+
+        .section-skill {
+            padding: 5rem 0;
+            background: linear-gradient(45deg, #ff7f50, #f5e5af)
+        }
+
+        .section-contact {
+            background: linear-gradient(45deg, hsl(40, 2%, 24%), #dbdbdb)
+        }
+
+
+
+        .skill-tag {
+            background: rgb(192, 192, 192);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            margin: 0.25rem;
+            display: inline-block;
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            margin: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center">
+                    <a href="cv1.html">
+                        <img src="asset/guy.jpg" class="nav-icon">
+                    </a>
+                    <a href="https://link2.com" class="ms-2">
+                        <img src="asset/IMG_4176.jpg"
+                            class="nav-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- link to resume -->
+    <section class="resume" id="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="profile-card">
+                        <img src="asset/guy.jpg" alt="Profile 1" class="profile-img">
+                        <h2 class="mt-3">Chayodom Chaiyathed</h2>
+                        <p class="lead">Data Scienctist</p>
+                        <a href="cv1.html" class="btn btn-light mt-3">More Description</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="profile-card">
+                        <img src="asset/IMG_4176.jpg"
+                            alt="Profile 2" class="profile-img">
+                        <h2 class="mt-3">Raweeroj Sangsit</h2>
+                        <p class="lead">Agricultural-Engineer</p>
+                        <a href="cv2.html" class="btn btn-light mt-3">More Description</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About us <section> -->
+    <section class="section-about" id="about">
+        <div class="container">
+            <h2 class="text-center mb-5">About Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Chayodom Chaiyathed</h3>
+                    I'm Fourth-year student aspiring for a data science internship.
+                    Knowledge in data analysis using Python, R, stats, and ML. Excited to
+                    apply these skills in practical contexts. Seeking an internship to
+                    further my expertise in data science
+                </div>
+                <div class="col-md-6">
+                    <h3>Raweeroj Sangsit</h3>
+                    I'm Fourth-year student aspiring for a data science internship.
+                    Knowledge in data analysis using Python, R, stats, and ML. Excited to
+                    apply these skills in practical contexts. Seeking an internship to
+                    further my expertise in data science
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skill -->
+    <section class="section-skill" id="experience">
+        <div class="container">
+            <h2 class="text-center mb-5">Experience & Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">Model ML/AI/GEN AI</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">POWER BI</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Deeplearning</span>
+                        <span class="skill-tag">Tensor flow </span>
+                        <span class="skill-tag">Sketch up</span>
+                        <span class="skill-tag">Roboflow </span>
+                        <span class="skill-tag">Jupyternotebook</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">YOLO</span>
+                        <span class="skill-tag">ML</span>
+                        <span class="skill-tag">Arduino-ESP32 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact us section -->
+    <section class="section-contact" id="contact">
+        <div class="container text-center">
+            <h2 class="mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Chayodom Chaiyathed</h3>
+                    <p>Email: 64070139@kmitl.ac.th</p>
+                    <p>Phone:0806744696</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Raweeroj Sangsit</h3>
+                    <p>Email: 64010719@example.com</p>
+                    <p>Phone:0958381617</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
